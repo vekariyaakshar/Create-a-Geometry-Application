@@ -7,7 +7,7 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // Setup configuration for feature management
+        
         var featureManagement = new Dictionary<string, string>
         {
             { "FeatureManagement:Square", "true" },
