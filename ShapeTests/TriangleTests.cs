@@ -1,4 +1,8 @@
-[TestClass]
+using
+namespace ShapeTests
+{
+    
+}
 public class TriangleTests
 {
     [TestMethod]
