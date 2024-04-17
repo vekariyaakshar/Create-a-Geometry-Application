@@ -1,4 +1,7 @@
-using
+using ShapeLibrary;
+
+using ShapeTests;
+
 namespace ShapeTests
 {
     
@@ -15,7 +18,7 @@ public class TriangleTests
         var result = square.CalculateArea();
 
         // Assert
-        Assert.AreEqual(25, result);
+        object value = Assert.(25, result);
     }
 
     [TestMethod]
@@ -28,7 +31,7 @@ public class TriangleTests
         var result = square.CalculatePerimeter();
 
         // Assert
-        Assert.AreEqual(20, result);
+        object value = Assert.(20, result);
     }
 
     // Similarly, you can write unit tests for other shapes and methods

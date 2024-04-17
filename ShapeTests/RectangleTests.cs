@@ -1,8 +1,10 @@
-using 
+using ShapeLibrary;
 namespace ShapeTests
+{
+    [TestClass]
 public class RectangleTests
 {
-    ShapeTests
+    [TestMethod]
     public void TestArea()
     {
         // Arrange
@@ -11,8 +13,8 @@ public class RectangleTests
         // Act
         var result = square.CalculateArea();
 
-        // Assert
-        Assert.AreEqual(25, result);
+            // Assert
+            object value = Assert.(25, result);
     }
 
    ShapeTests
@@ -24,9 +26,10 @@ public class RectangleTests
         // Act
         var result = square.CalculatePerimeter();
 
-        // Assert
-        Assert.AreEqual(20, result);
+            // Assert
+            object value = Assert.(20, result);
     }
 
     // Similarly, you can write unit tests for other shapes and methods
+}
 }
