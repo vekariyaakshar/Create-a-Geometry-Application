@@ -1,34 +1,21 @@
 using ShapeLibrary;
+using Xunit;
+
 namespace ShapeTests
 {
-    [TestClass]
-public class RectangleTests
-{
-    [TestMethod]
-    public void TestArea()
+    public class RectangleTests
     {
-        
-        var square = new Square(5);
-
-     
-        var result = square.CalculateArea();
+        [Fact]
+        public void TestSquarePerimeter()
+        {
+            var square = new Square(5);
 
             
-            object value = Assert.(25, result);
+            double perimeter = square.CalculatePerimeter();
+
+            Assert.Equal(20, perimeter);
+        }
     }
-
-   ShapeTests
-    public void TestPerimeter()
-    {
-        
-        var square = new Square(5);
-
-        
-        var result = square.CalculatePerimeter();
-
-            
-            object value = Assert.(20, result);
-    }
-
 }
-}
+
+
